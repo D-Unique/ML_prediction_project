@@ -12,7 +12,7 @@ def process_input():
     Name = request.form['name']
     Gender = request.form['gender']
     Age = request.form['age']
-    if Gender.islower() == 'male':
+    if Gender.islower() == 'male' or Gender.islower() == 'm':
         Gender = 1
     else:
         Gender = 0
@@ -22,7 +22,7 @@ def process_input():
 
     from joblib import load
     modal = load('../music_typepredictor.z')
-    music = modal.predict(data)
+    [music] = modal.predict(data)
     return render_template('modal.html', name=Name, genre=music )
 
 
