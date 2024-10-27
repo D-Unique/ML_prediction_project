@@ -38,12 +38,10 @@ step 1: git clone https://github.com/D-Unique/ML_prediction_project.git
 step 2: cd ML_prediction_project
 
 
-step 3: pip install -r requirements.txt  # If you have a requirements file
-
+step 3: pip install -r requirements.txt
 
 step 4: python app.py
 
-Example Usage (Optional): If applicable, provide a sample execution demonstrating how users interact with the application.
 
 **CONTRIBUTING:**
 
